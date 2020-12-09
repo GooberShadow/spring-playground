@@ -9,7 +9,7 @@ public class MathService {
         }
         else if(operation.equals("multiply"))
         {
-            return Math.floorDiv(x,y);
+            return x*y;
         }
         else if(operation.equals("divide"))
         {
