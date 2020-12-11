@@ -2,6 +2,8 @@ package com.example.demo;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
+
 @RestController
 public class HelloController {
     @GetMapping("/hello")
@@ -26,6 +28,14 @@ public class HelloController {
     public String sum(@RequestParam Integer [] n)
     {
         return MathService.sum(n).toString();
+    }
+
+    @GetMapping("/flight")
+    public Flight getFlight()
+    {
+        Flight flight = new Flight();
+        flight.setDepartsOn(new Date());
+        return flight;
     }
 
 }
