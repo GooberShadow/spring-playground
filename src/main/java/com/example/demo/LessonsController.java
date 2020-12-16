@@ -22,4 +22,11 @@ public class LessonsController {
         return this.repository.save(lesson);
     }
 
+//    @GetMapping("")
+//    public Lesson findById(@RequestParam Lesson lesson)
+//    {
+//        //return this.repository.findById(lesson);
+//    }
+
+
 }
